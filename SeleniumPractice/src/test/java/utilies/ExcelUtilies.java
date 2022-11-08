@@ -33,16 +33,16 @@ public class ExcelUtilies {
 
 	}
 	
-	public static void getStringCellData(int row,int cell) {
+	public String getStringCellData(int row,int cell) {
 		String value = sheet.getRow(row).getCell(cell).getStringCellValue();
 		System.out.println("This is the value: "+value);
+		return value;
 	}
 	
-	public static void getNumericCellData(int row,int cell) {
+	public double getNumericCellData(int row,int cell) {
 		double value = sheet.getRow(row).getCell(cell).getNumericCellValue();
 		System.out.println("This is the value: "+value);
-
-
+		return value;
 	}
 	
 	
